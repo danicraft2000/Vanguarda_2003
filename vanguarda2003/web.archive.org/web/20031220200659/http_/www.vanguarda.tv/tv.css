@@ -1,0 +1,55 @@
+BODY { 
+COLOR: #000000;
+scrollbar-arrow-color: #7BC5D0; 
+scrollbar-3dlight-color: #FFFFFF; 
+scrollbar-highlight-color: #CDCDCD; 
+scrollbar-face-color: #FFFFFF; 
+scrollbar-shadow-color: #CDCDCD; 
+scrollbar-darkshadow-color: #FFFFFF; 
+scrollbar-track-color: #FFFFFF; 
+}
+.tit  {font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; color:#000000;}
+.conteudo  {font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000;}
+.cham  {font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000;}
+.tab  {font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; color:#FFFFFF;}
+.imprimir  {font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; color:#FFFFFF;}
+.peq  {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#999999;}
+.det  {font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#999999;}
+.fto  {font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#999999;}
+.box  {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; }
+.top  {font-size:15px; font-family:Arial; font-weight:bold;}
+.txt  {font-size:10pt; font-family:Tahoma,Arial;line-height : 15px;}
+.pop  {font-size:11px; font-family:Tahoma,Arial; color:#663333;}
+.apa  {font-size:11px; font-family:Tahoma,Arial; font-weight:bold; color:#999999;}
+.hr  {font-size:11px; font-family:Tahoma,Arial;Color:#4f93bb}
+.blu  {font-size:9pt; font-family:Arial;line-height:10pt}
+.pgm  {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; font-weight:bold;}
+.admin  {font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; color:#000000;}
+a {	text-decoration:none;color:Black;}
+a:hover {text-decoration:underline;color:Black;}
+.button1 {font-family:Verdana;font-size:10px;color:#999999 ;background-color: #FFFFFF;border: 1px double #999999;cursor:hand;}
+.button2 {font-family:Verdana;font-size:10px;color: black;background-color: #FDEC4D;border: 1px double #000000;cursor:hand;}
+.table {border: 1px solid; border-color:#CCCCCC; width:420;}
+.foto {border: 1px solid; border-color:#000000;}
+.lista {border: 1px solid; border-color:#000000;}
+.sl {border:1px solid;width:200px;height:60px;border-color:#999999;font-family:Verdana;font-size:10px;color:#999999;}
+/*
+     FILE ARCHIVED ON 08:23:25 Dec 07, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:39:17 Feb 05, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.1
+  exclusion.robots: 0.034
+  exclusion.robots.policy: 0.015
+  esindex: 0.02
+  cdx.remote: 21.714
+  LoadShardBlock: 175.723 (3)
+  PetaboxLoader3.datanode: 159.638 (4)
+  PetaboxLoader3.resolve: 137.656 (2)
+  load_resource: 133.549
+*/
