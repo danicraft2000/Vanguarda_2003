@@ -1,0 +1,15 @@
+{
+  "_doc": "Pontos de sincronia compartilhados entre a cena (src/scene.js) e a trilha (audio/compose.py). Valores em quadros a 30 fps; 120 BPM => 1 batida = 15 quadros, 1 colcheia = 7,5, 1 semicolcheia = 3,75.",
+  "fps": 30,
+  "bpm": 120,
+  "total": 300,
+  "tileWave": { "start": 15, "step": 3.75, "count": 11 },
+  "pops": [67.5, 75, 90, 97.5, 105, 112.5],
+  "popDelay": 9,
+  "liftStart": 120,
+  "agenda": 150,
+  "ripple": { "start": 165, "step": 3.75 },
+  "rowImpact": { "VAN": 195, "GUAR": 210, "DA": 225 },
+  "hit": 240,
+  "sweep2": 262.5
+}
