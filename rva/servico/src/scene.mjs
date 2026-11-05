@@ -116,8 +116,10 @@ export function createScene(TL) {
     l.pop = track(t0, t0 + 0.9, [0, 1, 0], { times: [0, 0.12, 1], ease: ['easeOut', 'easeIn'] });
   }
   // V ignition
-  const vMix = track(C.ignite - 0.06, C.ignite + 0.12, [0, 1], { ease: 'easeOut' });
-  const vGlow = track(C.ignite - 0.06, C.ignite + 1.6, [0, 1.6, 0.42], { times: [0, 0.05, 1], ease: ['easeOut', EASE.settle] });
+  const vMix = track(C.ignite - 0.05, C.ignite + 0.1, [0, 1], { ease: 'easeOut' });
+  // accents peak exactly on the cue frame
+  const F1 = 1 / TL.fps;
+  const vGlow = track(C.ignite - 2 * F1, C.ignite + 1.6, [0, 1.6, 0.42], { times: [0, (2 * F1) / (1.6 + 2 * F1), 1], ease: ['easeOut', EASE.settle] });
   const vPunch = springAt(C.ignite, 0, 0, { stiffness: 260, damping: 9, velocity: 2.6 });
   const bounce = track(C.ignite - 0.1, C.ignite + 0.8, [0.1, 0.5], { ease: EASE.settle });
 
@@ -210,14 +212,14 @@ export function createScene(TL) {
 
   // ----------------------------------------------------------------- tracks
   const exposure = track(0, 0.6, [0.72, 1], { ease: 'easeOut' });
-  const hubFlash = track(C.hub - 0.02, C.hub + 0.6, [0, 1, 0], { times: [0, 0.06, 1], ease: ['easeOut', EASE.settle] });
+  const hubFlash = track(C.hub - F1, C.hub + 0.6, [0, 1, 0], { times: [0, F1 / (0.6 + F1), 1], ease: ['easeOut', EASE.settle] });
   const hubRing = track(C.hub, C.hub + 1.4, [0, 1], { ease: EASE.settle });
-  const igniteFlash = track(C.ignite - 0.02, C.ignite + 0.7, [0, 1, 0], { times: [0, 0.05, 1], ease: ['easeOut', EASE.settle] });
+  const igniteFlash = track(C.ignite - F1, C.ignite + 0.7, [0, 1, 0], { times: [0, F1 / (0.7 + F1), 1], ease: ['easeOut', EASE.settle] });
   const shock = track(C.ignite, C.ignite + 1.1, [0, 1], { ease: EASE.settle });
   const beamUp = track(C.riser2[0] + 0.3, C.ignite, [0, 1], { ease: EASE.launch });
   const finalRing = track(C.final, C.final + 1.9, [0, 1], { ease: EASE.settle });
   const sweep = track(C.sweep[0], C.sweep[1], [0, 1], { ease: EASE.glide });
-  const finalPop = track(C.final - 0.02, C.final + 1.2, [0, 1, 0], { times: [0, 0.04, 1], ease: ['easeOut', EASE.settle] });
+  const finalPop = track(C.final - F1, C.final + 1.2, [0, 1, 0], { times: [0, F1 / (1.2 + F1), 1], ease: ['easeOut', EASE.settle] });
   const atmo = track(C.ignite - 0.2, C.ignite + 1.2, [0.35, 1], { ease: 'easeOut' });
   const floorFade = track(5.0, 6.4, [1, 0.42], { ease: 'easeInOut' });
   const routeFade = track(C.hub + 0.1, C.hub + 1.2, [1, 0], { ease: 'easeIn' });

@@ -351,15 +351,15 @@ def compose():
     add(impact(amp=0.6, dur=1.8), C["hub"], rev=0.35)
     # tension pad under the build
     add(pad(["A2", "E3", "G3", "B3", "D4"], 5.0, 6.0, amp=0.09, cutoff=(600, 5200), attack=0.7, release=0.2), 5.0, rev=0.4)
-    # snare roll 5.0 -> 6.0 (8ths -> 16ths -> 32nds), crescendo
+    # snare roll 5.0 -> 5.875 (8ths -> 16ths -> 32nds), crescendo, then a breath before the hit
     t = 5.0
-    while t < 6.0 - 1e-6:
+    while t < C["ignite"] - 0.125 - 1e-6:
         p = (t - 5.0)
         step = 0.25 if p < 0.25 else (0.125 if p < 0.625 else 0.0625)
         add(snare(amp=0.10 + 0.40 * p ** 1.5, pan=rng.uniform(-0.2, 0.2)), t, rev=0.25)
         t += step
-    add(riser(C["riser2"][0], C["riser2"][1], amp=0.26, f0=400, f1=9000), C["riser2"][0], rev=0.3)
-    sw, ts = reverse_swell(C["ignite"], 1.2, amp=0.2)
+    add(riser(C["riser2"][0], C["riser2"][1] - 0.1, amp=0.26, f0=400, f1=9000), C["riser2"][0], rev=0.3)
+    sw, ts = reverse_swell(C["ignite"] - 0.04, 1.2, amp=0.2)
     add(sw, ts, rev=0.5)
 
     # ---- bar 4: ignition of the V
@@ -371,9 +371,10 @@ def compose():
     add(bass("G1", 0.95, amp=0.4), ig)
     # SERVIÇO grows out of the V: R+I, E+Ç, S+O -> bell dyads climbing
     for t, (a, b) in ((C["spreadR_I"], ("B5", "D6")), (C["spreadE_C"], ("D6", "F#6")), (C["spreadS_O"], ("F#6", "A6"))):
-        add(fm_bell(mtof(n2m(a)), dur=1.6, amp=0.10, pan=-0.45), t, rev=0.6)
-        add(fm_bell(mtof(n2m(b)), dur=1.6, amp=0.09, pan=0.45), t, rev=0.6)
-        add(hat(amp=0.06, pan=0.0), t)
+        add(fm_bell(mtof(n2m(a)), dur=1.6, amp=0.15, pan=-0.45), t, rev=0.6)
+        add(fm_bell(mtof(n2m(b)), dur=1.6, amp=0.13, pan=0.45), t, rev=0.6)
+        add(pluck(mtof(n2m(b)) / 2, dur=0.5, amp=0.16, pan=0.0), t, rev=0.3)
+        add(hat(amp=0.12, pan=0.0), t)
     # pickup into the final chord
     add(pad(["A2", "E3", "G3", "C#4", "D4"], 7.0, 8.0, amp=0.11, cutoff=(900, 3600), attack=0.25, release=0.2), 7.0, rev=0.5)
     for i, nm in enumerate(["A1", "A1", "A1", "A1"]):
