@@ -1,0 +1,20 @@
+{
+  "name": "rva-vanguarda-servico",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "RVA — Remaking Vintage Archives: remake programado da vinheta VANGUARDA SERVIÇO",
+  "scripts": {
+    "audio": "python3 audio/compose.py",
+    "render": "node src/render.mjs",
+    "build": "bash scripts/build.sh"
+  },
+  "dependencies": {
+    "@expo-google-fonts/jost": "^0.4.2",
+    "@expo-google-fonts/league-spartan": "^0.4.2",
+    "@expo-google-fonts/montserrat": "^0.4.2",
+    "@napi-rs/canvas": "^1.1.0",
+    "motion": "^14.9.1",
+    "opentype.js": "^2.0.0"
+  }
+}

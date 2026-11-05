@@ -1,0 +1,30 @@
+{
+  "title": "VANGUARDA SERVIÇO — RVA remake",
+  "fps": 30,
+  "width": 3840,
+  "height": 2160,
+  "duration": 10.0,
+  "bpm": 120,
+  "sampleRate": 48000,
+  "comment": "Tempos em segundos. 120 BPM => 1 tempo = 0.5 s = 15 quadros; 1 compasso (4/4) = 2 s = 60 quadros. Audio e video leem este arquivo, garantindo a sincronia.",
+  "cues": {
+    "open": 0.0,
+    "pulses": [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0],
+    "bar2": 2.0,
+    "beams": [2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75],
+    "riser1": [3.0, 4.0],
+    "hub": 4.0,
+    "rowVAN": 4.0,
+    "rowGUAR": 4.5,
+    "rowDA": 5.0,
+    "riser2": [5.0, 6.0],
+    "ignite": 6.0,
+    "spreadR_I": 6.25,
+    "spreadE_C": 6.5,
+    "spreadS_O": 6.75,
+    "fill": [7.0, 8.0],
+    "final": 8.0,
+    "sweep": [8.0, 8.9],
+    "end": 10.0
+  }
+}
