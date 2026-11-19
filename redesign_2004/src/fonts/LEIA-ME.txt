@@ -1,0 +1,4 @@
+Coloque aqui as fontes (não versionadas — são comerciais, ITC/Adobe):
+  AvantGardeBold.ttf  ->  ITCAvantGardeStd-Bold.ttf
+  AvantGardeDemi.ttf  ->  ITCAvantGardeStd-Demi.ttf
+Glifos alternativos usados: U+E04F (V inclinado, "V.alt02") e U+E000 (A inclinado, "A.alt01").

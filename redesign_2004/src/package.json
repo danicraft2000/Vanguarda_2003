@@ -1,0 +1,16 @@
+{
+  "name": "vanguarda-grafismo-2004",
+  "private": true,
+  "type": "module",
+  "description": "Redesign 2004 do grafismo da Rede Vanguarda — renderização 3D (three.js + Chromium headless)",
+  "scripts": {
+    "render": "node render.mjs",
+    "compose": "python3 compose.py out ../vanguarda_grafismo_2004.png 800"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}
